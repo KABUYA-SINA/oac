@@ -1,0 +1,33 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: nth($padding, 3);
+    @include color;
+    transition: .6s;
+    @include tablet {
+        flex-direction: row;
+    }
+    .first_p{
+        background: $blue-gray;
+        padding: nth($padding, 1);
+    }
+    & .res-element {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+            gap: nth($gap, 2);
+        }
+        a {
+            cursor: pointer;
+            color: $white-color;
+        }
+    }
+}

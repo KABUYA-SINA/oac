@@ -1,0 +1,85 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.heading-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    transition: .6s;
+    padding: nth($padding, 2) 25px;
+    & .logo {
+        cursor: pointer;
+        color: $primary-color;
+    }
+    nav {
+        ul {
+            @include flex-display;
+            flex-direction: column;
+            height: 100%;
+            transition: .4s;
+            @include tablet{
+                flex-direction: row;
+            }
+            li {
+                padding: nth($padding, 2);
+                a {
+                    padding: nth($padding, 3) 0;
+                    margin: 0 nth($margin, 1);
+                    color: $primary-color;
+                    transition: .6s;
+                    @include tablet {
+                        margin: 0 nth($margin, 3);
+                    }
+                }
+            }
+        }
+    }
+    & .navigation {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: .4s;
+        opacity: 1;
+        z-index: 1;
+        &.active {
+            left: 0;
+            background: $second-color;
+        }
+    }
+    & .toggle {
+        z-index: 999999;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    position: relative;
+    &::after {
+        content: "";
+        height: 4px;
+        width: 0;
+        background-color: #880808;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        animation: anim 0.6s ease forwards;
+
+        @-webkit-keyframes anim {
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes anim {
+            to {
+                width: 100%;
+            }
+        }
+    }
+}

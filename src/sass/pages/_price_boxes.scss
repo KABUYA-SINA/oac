@@ -1,0 +1,26 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+.price-boxes{
+    height: 100%;
+    width: 100%;
+    background: #F5F5F5;
+    .price-boxes__txt{
+        background: $primary-color;
+        padding: nth($padding, 4);
+        color: $white-color;
+        height: 25%;
+        width: 100%;
+    }
+    & .price-boxes__el{
+        height: 75%;
+        width: 100%;
+        padding: 30px nth($padding, 4);
+        color: $black-color;
+        li{
+            padding: calc(nth($padding, 1) / 2);
+        }
+    }
+
+}

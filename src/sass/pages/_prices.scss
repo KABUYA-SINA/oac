@@ -1,0 +1,32 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.price{
+    @include flex-display;
+    flex-direction: column;
+    gap: nth($gap, 4)*2.5;
+    padding: nth($padding, 4)*4 20px;
+    .price-txt{
+        @include boxes-price__about;
+    }
+    .price-prices{
+        @include flex-display;
+        flex-direction: column;
+        gap: nth($gap, 4)*2.5;
+        .prices--boxes{
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(1, 270px);
+            grid-gap: 25px;
+            grid-auto-rows: minmax(400px, auto);
+            @include tablet {
+                grid-template-columns: repeat(2, 250px);
+            }
+            .prices__el{
+                width: 100%;
+                @include shadow-boxes;
+            }
+        }
+    }
+}

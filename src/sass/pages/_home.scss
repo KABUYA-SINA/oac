@@ -1,0 +1,80 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.main_home{
+    @include flex-display;
+    flex-direction: column;
+    position: relative;
+    gap: nth($gap, 4)*5;
+    .first_section{
+        height: 100vh;
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        .welcom{
+            @include flex-display;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            .welcom-txt{
+                flex-direction: column;
+                height: 100%;
+                @include flex-display;
+                @include home-section--lastChild;
+                .welc-home{
+                    color: $blue-gray;
+                    width: 100%;
+                    line-height: 1;
+                    @include tablet{
+                        line-height: 1.5;
+                    }
+                }
+                p{
+                    color: $white-color;
+                }
+                :is(.welc-home, .welc-home--para){
+                    background: $black-color;
+                    padding: nth($padding, 2);
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .second_section {
+        @include flex-display;
+        height: 100%;
+        .mission{
+            @include home-section--lastChild;
+        }
+    }
+    .third_section{
+        @include flex-display;
+        flex-direction: column;
+        gap: nth($gap, 4)*2.5;
+        padding: nth($padding, 4)*2.5 0;
+        background: $primary-color;
+        color: $white-color;
+        .service{
+            @include home-section--lastChild;
+        }
+        .service_img{
+            width: 70%;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(1, 220px);
+            grid-gap: 25px;
+            grid-auto-rows: minmax(10px, auto);
+            @include tablet{
+                grid-template-columns: repeat(2, 250px);
+            }
+            @include ordi{
+                grid-template-columns: repeat(3, 150px);
+            }
+
+        }
+    }
+}

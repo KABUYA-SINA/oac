@@ -1,0 +1,104 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    line-height: 1.5;
+    letter-spacing: .5px;
+    background: $second-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+:is(ul, ol){
+    list-style-type: none;
+}
+
+:is(h1, h2, h3, .about-third__el-thi > h4) {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+:is(h1, h2, h3, .welc-home){
+    font-family: "Shrikhand", serif;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4{
+    font-size: 17px;
+}
+
+:is(p, span) {
+    font-size: 14.5px;
+    text-align: left;
+}
+
+label{
+    font-size: 12px;
+}
+
+
+// bold and color classes
+.bold {
+    font-weight: 600;
+}
+.back-color {
+    background: $blue-gray;
+}
+
+//realisation card
+.card-text > h4{
+    font-size: 15px;
+}
+//tarifs
+.price-boxes__txt > span{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.price-boxes__txt > p{
+    font-size: 35px;
+}
+.price-boxes__el > li{
+    font-size: 13px;
+}
+//home
+.welc-home{
+    font-size: 40px;
+}
+.welc-home--para {
+    font-weight: 600;
+}
+//home card service
+.under{
+    text-shadow: 0 4px 4px $blue-gray, 0 2px 0 black;
+}
+.card_service > p{
+    font-size: 12px;
+}

@@ -1,0 +1,21 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/header_typo";
+@import "./base/footer_typo";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/container";
+
+@import "./pages/error";
+@import "./pages/about";
+@import "./pages/cards";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/form";
+@import "./pages/card_service";
+@import "./pages/price_boxes";
+@import "./pages/prices";
+@import "./pages/realisations";

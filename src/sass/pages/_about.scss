@@ -1,0 +1,28 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.about{
+    @include flex-display;
+    flex-direction: column;
+    gap: nth($gap, 4)*1.5;
+    padding: nth($padding, 4)*3 0;
+    .about-first,
+    .about-second,
+    .about-third,
+    .about-fourth {
+        @include flex-display;
+        flex-direction: column;
+        gap: nth($gap, 4)*1.5;
+        height: 100%;
+        width: 100%;
+        padding: nth($padding, 2) 25px;
+        .about-first__el--fir,
+        .about-first__el--sec,
+        .about-second__el--fir,
+        .about-third__el--fir,
+        .about-third__el-sec,
+        .about-third__el-thi{
+            @include boxes-price__about;
+        }
+    }
+}

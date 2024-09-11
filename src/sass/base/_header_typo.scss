@@ -1,0 +1,9 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.heading-page {
+    li > a{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}

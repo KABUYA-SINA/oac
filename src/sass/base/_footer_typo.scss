@@ -1,0 +1,14 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.footer{
+    .first_p {
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    a {
+        svg {
+            font-size: 25px;
+        }
+    }
+}

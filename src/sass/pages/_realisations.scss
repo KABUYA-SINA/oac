@@ -1,0 +1,37 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.realisation{
+    @include flex-display;
+    flex-direction: column;
+    gap: nth($gap, 4)*2.5;
+    padding: nth($padding, 4)*2.5 0;
+    .realisation__el{
+        @include boxes-price__about;
+    }
+    .real-box__img{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 270px);
+        grid-gap: 40px;
+        grid-auto-rows: minmax(10px, auto);
+        @include tablet {
+            grid-template-columns: repeat(2, 300px);
+        }
+        @include ordi {
+            grid-template-columns: repeat(3, 290px);
+        }
+        .real-acticle{
+            @include shadow-boxes;
+        }
+    }
+    .btn-home{
+        width: 100%;
+        text-align: center;
+        .btn{
+            background: $primary-color;
+            padding: nth($padding, 4);
+            color: $white-color;
+        }
+    }
+}
