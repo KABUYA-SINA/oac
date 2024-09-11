@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/oac/static/css/main.1b00a1ce.css",
+    "main.js": "/oac/static/js/main.a9fc3407.js",
+    "static/media/sev_car.webp": "/oac/static/media/sev_car.3fef3b4a19704acf81c2.webp",
+    "static/media/fou_car.webp": "/oac/static/media/fou_car.469dd7d04a32945f603d.webp",
+    "static/media/f_car.webp": "/oac/static/media/f_car.e01f14a888a835b71f2c.webp",
+    "static/media/car_wash.webp": "/oac/static/media/car_wash.e780e8411eac97f4d3c0.webp",
+    "static/media/th_car.webp": "/oac/static/media/th_car.b821de0dbdcbee7f3c5d.webp",
+    "static/media/hei_car.webp": "/oac/static/media/hei_car.0ce8ccbcae7db1876ebb.webp",
+    "static/media/fir_car.webp": "/oac/static/media/fir_car.4f2d21a0f058b5b9630d.webp",
+    "static/media/se_car.webp": "/oac/static/media/se_car.35e46e8d2ef589486620.webp",
+    "static/media/si_car.webp": "/oac/static/media/si_car.9fb356f589e4c7f04af4.webp",
+    "static/media/lavage_exterieur.webp": "/oac/static/media/lavage_exterieur.77659f90aa638ae9b4c4.webp",
+    "static/media/lustrage_cirage.webp": "/oac/static/media/lustrage_cirage.54c48752d6c8ea5a8d65.webp",
+    "static/media/lavage_interieur.webp": "/oac/static/media/lavage_interieur.1611800b50bef78d948c.webp",
+    "static/media/net.webp": "/oac/static/media/net.2730150f2a885bd24654.webp",
+    "static/media/traitement_caro.webp": "/oac/static/media/traitement_caro.08853ecb6451f98bc7f9.webp",
+    "static/media/lavage_complet.webp": "/oac/static/media/lavage_complet.4284a4e191954af108d7.webp",
+    "index.html": "/oac/index.html",
+    "main.1b00a1ce.css.map": "/oac/static/css/main.1b00a1ce.css.map",
+    "main.a9fc3407.js.map": "/oac/static/js/main.a9fc3407.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b00a1ce.css",
+    "static/js/main.a9fc3407.js"
+  ]
+}
